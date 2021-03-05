@@ -13,6 +13,7 @@ import javax.net.ssl.HttpsURLConnection;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -90,7 +91,7 @@ public class Controle {
 
         } catch (IOException ex) {
             Logger.getLogger(Controle.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (org.json.simple.parser.ParseException ex) {
+        } catch (ParseException ex) { 
             Logger.getLogger(Controle.class.getName()).log(Level.SEVERE, null, ex);
         }
 
